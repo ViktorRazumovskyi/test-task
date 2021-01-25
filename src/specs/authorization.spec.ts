@@ -17,7 +17,7 @@ describe('Authorization', () => {
     it('Not registered user, unsuccessful login', () => {
         browser.url('/');
         expect(browser.getUrl()).eqls('https://www.sbzend.ssls.com/');
-        expect(browser.getTitle()).eqls('Cheap SSL Certificates—Buy SSL Certs $3.44 & Save 56%');
+        expect(browser.getTitle()).eqls('Cheap SSL Certificates—Buy SSL Certs $3.44 & Save 68%');
 
         waitAndClickWithPause(Authorization.navigateToLoginPageBtn, 2000);
         expect(browser.getUrl()).eqls('https://www.sbzend.ssls.com/authorize');
